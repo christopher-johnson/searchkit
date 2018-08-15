@@ -14,7 +14,7 @@ const {
   TermQuery, RangeQuery, BoolMust,
 
   Layout, LayoutBody, LayoutResults, SideBar, TopBar, ActionBar, ActionBarRow
-} = require("searchkit")
+} = require("searchkit-fork")
 const host = "http://demo.searchkit.co/api/movies"
 import * as ReactDOM from "react-dom";
 import * as React from "react";
@@ -26,7 +26,7 @@ const isUndefined = require("lodash/isUndefined")
 
 import { TogglePanel } from './TogglePanel'
 
-require("searchkit/release/theme.css")
+require("../../../node_modules/searchkit-fork/theming/theme.scss")
 require("./customisations.scss")
 
 const MovieHitsGridItem = (props)=> {

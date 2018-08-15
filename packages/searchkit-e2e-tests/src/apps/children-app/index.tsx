@@ -15,10 +15,10 @@ import {
   SearchkitProvider,
   NoHits,
   InitialLoader
-} from "searchkit"
+} from "searchkit-fork"
 
 require("./customisations.scss");
-require("~searchkit/release/theme.css")
+require("~../../node_modules/searchkit-fork/theming/theme.scss")
 
 const TaxonomyHitsItem = (props)=> {
   const {result, bemBlocks} = props

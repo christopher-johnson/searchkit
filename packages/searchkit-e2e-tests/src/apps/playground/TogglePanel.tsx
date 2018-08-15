@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as PropTypes from "prop-types";
-import { block } from "searchkit"
+import { block } from "searchkit-fork"
 
 export interface TogglePanelProps extends React.Props<TogglePanel> {
   key?: any

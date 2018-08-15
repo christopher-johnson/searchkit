@@ -4,7 +4,7 @@ import * as React from "react";
 //Simulate script include of searchkit
 window['ReactDOM'] = ReactDOM
 window['React'] = React
-let searchkitRaw = require("raw-loader!searchkit/release/bundle.js")
+let searchkitRaw = require("raw-loader!../../../node_modules/searchkit-fork/release/bundle.js")
 let script = document.createElement("script")
 script.type = "text/javascript"
 script.innerHTML = searchkitRaw
@@ -26,7 +26,7 @@ const {
   ActionBar, ActionBarRow, SideBar
 } = window["Searchkit"]
 
-require("searchkit/release/theme.css")
+require("../../../node_modules/searchkit-fork/theming/theme.scss")
 const MovieHitsGridItem = (props)=> {
   const {bemBlocks, result} = props
   let url = "http://www.imdb.com/title/" + result._source.imdbId

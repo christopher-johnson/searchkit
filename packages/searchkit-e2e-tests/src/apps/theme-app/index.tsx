@@ -7,7 +7,7 @@ const {
   InputFilter, GroupedSelectedFilters,
   Layout, TopBar, LayoutBody, LayoutResults,
   ActionBar, ActionBarRow, SideBar
-} = require("searchkit/release/bundle.js") //test UMD module include
+} = require("searchkit-fork/release/bundle.js") //test UMD module include
 
 
 const host = "http://demo.searchkit.co/api/movies"

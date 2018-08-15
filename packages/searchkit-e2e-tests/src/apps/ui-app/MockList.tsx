@@ -2,7 +2,7 @@ import * as React from "react";
 const {
   Panel,
   renderComponent
-} = require("searchkit")
+} = require("searchkit-fork")
 
 const includes = require("lodash/includes")
 const without = require("lodash/without")

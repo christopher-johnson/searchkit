@@ -5,13 +5,13 @@ const {
   SelectedFilters, ResetFilters, RangeFilter, NumericRefinementListFilter,
   ViewSwitcherHits, ViewSwitcherToggle, DynamicRangeFilter,MenuFilter ,
   InputFilter, GroupedSelectedFilters, FastClick, FastClickComponent, PageSizeSelector
-} = require("searchkit")
+} = require("searchkit-fork")
 
 FastClick.component = FastClickComponent
 const {
   Layout, TopBar, LayoutBody, LayoutResults,
   ActionBar, ActionBarRow, SideBar
-} = require("searchkit")
+} = require("searchkit-fork")
 
 const host = "http://demo.searchkit.co/api/movies"
 import * as ReactDOM from "react-dom";

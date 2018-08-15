@@ -22,7 +22,7 @@ $sk-selector-active-text-color: white !default;
 
 $sk-selected-filters-background: #333 !default;
 
-@import "~searchkit/theming/theme.scss";
+@import "../../../node_modules/searchkit-fork/theming/theme.scss";
 
 
 .my-logo {

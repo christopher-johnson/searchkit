@@ -18,10 +18,10 @@ import {
   NoHits,
   InitialLoader,
   RangeFilter
-} from "searchkit"
+} from "searchkit-fork"
 
 import "./customisations.scss";
-require("searchkit/release/theme.css")
+require("../../../node_modules/searchkit-fork/theming/theme.scss")
 
 const TaxonomyHitsItem = (props)=> {
   const {result, bemBlocks} = props
@@ -36,8 +36,8 @@ export class App extends React.Component<any, any> {
 
   searchkit:SearchkitManager
 
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     const host = "http://demo.searchkit.co/api/taxonomy"
     this.searchkit = new SearchkitManager(host)
   }

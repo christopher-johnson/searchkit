@@ -2,7 +2,7 @@ import * as React from "react";
 import {
   Panel, RangeSlider,
   renderComponent, RenderComponentPropType,
-} from "searchkit"
+} from "searchkit-fork"
 
 export class MockRange extends React.Component<any, any>{
 

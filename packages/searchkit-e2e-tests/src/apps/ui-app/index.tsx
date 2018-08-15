@@ -7,7 +7,7 @@ const {
   MenuFilter,
   RangeSlider, RangeHistogram, RangeInput,
   FilterGroup, ItemHistogramList
-} = require("searchkit")
+} = require("searchkit-fork")
 
 const host = "http://demo.searchkit.co/api/movies"
 import * as ReactDOM from "react-dom";
@@ -18,7 +18,7 @@ import {MockRange} from "./MockRange"
 
 
 require("./customisations.scss")
-require("searchkit/theming/theme.scss")
+require("../../../node_modules/searchkit-fork/theming/theme.scss")
 
 const MovieHitsGridItem = (props)=> {
   const {bemBlocks, result} = props

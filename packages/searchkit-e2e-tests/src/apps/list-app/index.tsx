@@ -4,13 +4,13 @@ import {
   MenuFilter, HitsStats, SortingSelector, NoHits,
   ItemList, CheckboxItemList, ItemHistogramList,
   Tabs, TagCloud, Toggle, Select
-} from "searchkit"
+} from "searchkit-fork"
 const host = "http://demo.searchkit.co/api/movies"
 import * as ReactDOM from "react-dom"
 import * as React from "react"
 import {Router, Route, browserHistory, Link, IndexRoute} from 'react-router'
 
-require("searchkit/release/theme.css")
+require("../../../node_modules/searchkit-fork/theming/theme.scss")
 require("./customisations.scss")
 
 const MovieHitsListItem = (props)=> {

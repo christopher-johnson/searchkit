@@ -4,7 +4,7 @@ const {
   RangeFilter, HitsStats, SortingSelector, NoHits,
   RangeHistogram, RangeSlider, RangeInput, RangeSliderHistogram,
   RangeSliderHistogramInput, RangeSliderInput, RangeHistogramInput
-} = require("searchkit")
+} = require("searchkit-fork")
 const host = "http://demo.searchkit.co/api/movies"
 import * as ReactDOM from "react-dom";
 import * as React from "react";
@@ -12,7 +12,7 @@ const searchkit = new SearchkitManager(host)
 
 
 
-require("searchkit/release/theme.css")
+require("../../../node_modules/searchkit-fork/theming/theme.scss")
 require("./customisations.scss")
 
 const MovieHitsGridItem = (props)=> {
