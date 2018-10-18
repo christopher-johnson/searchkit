@@ -1,6 +1,6 @@
 {
   "name": "searchkit-fork",
-  "version": "2.3.1",
+  "version": "2.3.3",
   "description": "A suite of react components to help create a UI quickly for elasticsearch",
   "main": "lib/index.js",
   "keywords": [
@@ -88,7 +88,7 @@
     "jest-junit-reporter": "^1.1.0",
     "js-beautify": "^1.5.10",
     "json-loader": "^0.5.7",
-    "node-sass": "^4.5.3",
+    "node-sass": "^4.9.3",
     "null-loader": "^0.1.1",
     "postcss-loader": "^0.8.2",
     "react": "^15.6.0",
