@@ -162,6 +162,7 @@ export class SearchBox extends SearchkitComponent<SearchBoxProps, any> {
         <form onSubmit={this.onSubmit.bind(this)}>
           <div className={block("icon")}></div>
           <input type="text"
+          aria-label="searchbox"
           data-qa="query"
           className={block("text")}
           placeholder={this.props.placeholder || this.translate("searchbox.placeholder")}

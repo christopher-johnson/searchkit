@@ -40,10 +40,10 @@ export class Select extends React.PureComponent<ListProps, any> {
     const bemBlocks = {
       container: block(mod).el
     }
-
+    const ariaLabel = this.getSelectedValue().split('.')[0]
     return (
       <div className={bemBlocks.container().mix(className).state({ disabled }) }>
-        <select onChange={this.onChange} value={this.getSelectedValue()}>
+        <select aria-label={ariaLabel} onChange={this.onChange} value={this.getSelectedValue()}>
           {map(items, ({key, label, title, disabled, doc_count}) => {
             var text = translate(label || title || key)
             if (showCount && doc_count !== undefined) text += ` (${countFormatter(doc_count)})`

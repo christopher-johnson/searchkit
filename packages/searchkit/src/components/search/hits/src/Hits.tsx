@@ -60,6 +60,12 @@ export class HitsList extends React.PureComponent<HitsListProps, any>{
 		hits:PropTypes.any
 	}
 
+	componentDidUpdate(prevProps) {
+	  if (this.props.hits !== prevProps.hits) {
+	    window.scrollTo(0,0)
+    }
+  }
+
 	render(){
 		const {hits, mod, className, itemComponent} = this.props
 		const bemBlocks = {
