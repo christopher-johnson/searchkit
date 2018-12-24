@@ -60,7 +60,13 @@ export class HitsList extends React.PureComponent<HitsListProps, any>{
 		hits:PropTypes.any
 	}
 
-	render(){
+  componentDidUpdate(prevProps) {
+    if (this.props.hits !== prevProps.hits) {
+      window.scrollTo(0,0)
+    }
+  }
+
+  render(){
 		const {hits, mod, className, itemComponent} = this.props
 		const bemBlocks = {
 			container: block(mod).el,
@@ -132,7 +138,6 @@ export class Hits extends SearchkitComponent<HitsProps, any> {
 		this.hitsAccessor = new HitsAccessor({ scrollTo:this.props.scrollTo })
 		this.searchkit.addAccessor(this.hitsAccessor)
 	}
-
 
 	render() {
 		let hits:Array<Object> = this.getHits()

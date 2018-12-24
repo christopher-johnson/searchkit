@@ -163,6 +163,7 @@ export class SearchBox extends SearchkitComponent<SearchBoxProps, any> {
         <form onSubmit={this.onSubmit.bind(this)}>
           <div className={block("icon")}></div>
           <input type="text"
+          aria-label="searchbox"
           data-qa="query"
           className={block("text")}
           placeholder={this.props.placeholder || this.translate("searchbox.placeholder")}
@@ -171,8 +172,8 @@ export class SearchBox extends SearchkitComponent<SearchBoxProps, any> {
           onBlur={this.setFocusState.bind(this, false)}
           ref="queryField"
           autoFocus={this.props.autofocus}
-          onInput={this.onChange.bind(this)}/>
-          <input type="submit" value={this.translate("searchbox.button")} className={block("action")} data-qa="submit"/>
+          onChange={this.onChange.bind(this)}/>
+          <input type="submit" defaultValue={this.translate("searchbox.button")} className={block("action")} data-qa="submit"/>
           <div data-qa="loader" className={block("loader").mix("sk-spinning-loader").state({hidden:!this.isLoading()})}></div>
         </form>
       </div>
